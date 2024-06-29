@@ -1,2 +1,2 @@
-# Milestone_Project_2
-This is the milestone project 2 for NC SD bootcamp
+# Somnis Sleep Tracker
+Somnis sleep tracker uses data that you input to calculate your sleep time and quality.
