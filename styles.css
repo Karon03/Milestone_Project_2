@@ -1,0 +1,11 @@
+body{
+    background-color: #222D5A;
+}
+
+#about{
+    color: white; 
+    text-align: center;
+    width: 85%;
+    align-items: center;
+    margin: auto;
+}
