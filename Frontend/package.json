@@ -1,0 +1,12 @@
+{
+  "name": "somnus-frontend",
+  "version": "1.0.0",
+  "description": "Somnus sleep tracker uses data that you input to calculate your sleep time and quality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
