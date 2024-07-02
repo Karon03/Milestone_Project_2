@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 // Routes
 
 const accountsController = require('./controllers/accounts_controller')
-// app.use('/account', accountsController)
+app.use('/account', accountsController)
 
 const sleepController = require('./controllers/sleep_controller')
 // app.use('/sleep', sleepController)
