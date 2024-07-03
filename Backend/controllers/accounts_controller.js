@@ -12,7 +12,7 @@ const accounts = express.Router();
 
 // About page route.
 accounts.get("/accounts", function (req, res) {
-  res.send("About this wiki");
+//   res.render("About this tracker");
 });
 
 module.exports = accounts;
