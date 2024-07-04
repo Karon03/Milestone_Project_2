@@ -1,36 +1,36 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-    class Account extends Model {
+    class Sleep extends Model {
     }
 }
 
-Account.init({
-    account_id: {
+Sleep.init({
+    sleep_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    username: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    date_of_birth: {
+    start_sleep: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    password: {
-        type: DataTypes.STRING,
+    stop_sleep: {
+        type: DataTypes.INTEGER,
         allowNull: false
     },
-    email: {
-        type: DataTypes.STRING,
+    start_interruption: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    stop_interruption: {
+        type: DataTypes.INTEGER,
         allowNull: false
     }
 }, {
     sequelize,
-    modelName: 'Account',
-    tableName: 'accounts',
+    modelName: 'Sleep',
+    tableName: 'sleep',
     timestamps: false
 })
-return Account
+return Sleep
