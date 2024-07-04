@@ -11,19 +11,19 @@ Sleep.init({
         primaryKey: true,
         autoIncrement: true
     },
-    username: {
+    start_sleep: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    date_of_birth: {
+    stop_sleep: {
         type: DataTypes.DATE,
         allowNull: false
     },
-    password: {
+    start_interruption: {
         type: DataTypes.DATE,
         allowNull: false
     },
-    email: {
+    stop_interruption: {
         type: DataTypes.DATE,
         allowNull: false
     }
