@@ -16,15 +16,15 @@ Account.init({
         allowNull: false
     },
     date_of_birth: {
-        type: DataTypes.DATE,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     password: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false
     },
     email: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false
     }
 }, {

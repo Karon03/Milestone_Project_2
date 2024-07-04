@@ -12,19 +12,19 @@ Sleep.init({
         autoIncrement: true
     },
     start_sleep: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     stop_sleep: {
-        type: DataTypes.DATE,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     start_interruption: {
-        type: DataTypes.DATE,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     stop_interruption: {
-        type: DataTypes.DATE,
+        type: DataTypes.INTEGER,
         allowNull: false
     }
 }, {

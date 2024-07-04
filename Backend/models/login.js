@@ -16,11 +16,11 @@ Login.init({
         allowNull: false
     },
     password: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false
     },
     email: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false
     }
 }, {
