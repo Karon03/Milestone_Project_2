@@ -1,12 +1,12 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-    class Account extends Model {
+    class Sleep extends Model {
     }
 }
 
-Account.init({
-    account_id: {
+Sleep.init({
+    sleep_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -29,8 +29,8 @@ Account.init({
     }
 }, {
     sequelize,
-    modelName: 'Account',
-    tableName: 'accounts',
+    modelName: 'Sleep',
+    tableName: 'sleep',
     timestamps: false
 })
-return Account
+return Sleep
