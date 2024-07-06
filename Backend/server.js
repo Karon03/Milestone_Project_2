@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
 const accountsController = require('./controllers/accounts_controller')
 app.use('/account', accountsController)
 
-const sleepController = require('./controllers/sleep_controller')
-// app.use('/sleep', sleepController)
+const sleepsController = require('./controllers/sleeps_controller')
+app.use('/sleep', sleepsController)
 
 // LISTEN
 app.listen(PORT, () => {

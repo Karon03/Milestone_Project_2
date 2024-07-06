@@ -3,13 +3,17 @@ const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class Sleep extends Model {
     }
-}
+
 
 Sleep.init({
     sleep_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
+    },
+    days: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
     start_sleep: {
         type: DataTypes.INTEGER,
@@ -34,3 +38,4 @@ Sleep.init({
     timestamps: false
 })
 return Sleep
+}
