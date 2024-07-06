@@ -3,7 +3,6 @@ const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
     class Account extends Model {
     }
-}
 
 Account.init({
     account_id: {
@@ -34,3 +33,4 @@ Account.init({
     timestamps: false
 })
 return Account
+}
