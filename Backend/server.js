@@ -23,5 +23,4 @@ app.use('/sleep', sleepsController)
 // LISTEN
 app.listen(PORT, () => {
     console.log('listening on port', PORT);
-  })
-  
+})

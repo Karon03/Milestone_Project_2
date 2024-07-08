@@ -9,20 +9,24 @@ module.exports = {
         primaryKey: true,
         autoIncrement: true
       },
+      day: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       start_sleep: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DATE,
         allowNull: false
       },
       stop_sleep: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DATE,
         allowNull: false
       },
       start_interruption: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DATE,
         allowNull: false
       },
       stop_interruption: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DATE,
         allowNull: false
       }
   })
