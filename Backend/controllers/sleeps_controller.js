@@ -1,13 +1,14 @@
-const express = require("express");
-const sleeps = express.Router();
+const router = require('express').Router()
 const db = require('../models')
-const { sleep } = db
+const { Sleep } = db
 
 
 // FIND ALL SLEEP LOGS
-sleeps.get('/', async (req, res) => {
+router.get('/', async (req, res) => {
+    // const data = await sleep.findAll()
+    // res.json(data)
     try {
-        const foundSleeps = await sleep.findAll()
+        const foundSleeps = await Sleep.findAll()
         res.status(200).json(foundSleeps)
     } catch (error) {
         res.status(500).json(error)
@@ -15,9 +16,9 @@ sleeps.get('/', async (req, res) => {
 })
 
 // FIND A SPECIFIC SLEEP LOG
-sleeps.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
-        const foundSleep = await sleep.findOne({
+        const foundSleep = await Sleep.findOne({
             where: { sleep_id: req.params.id }
         })
         res.status(200).json(foundSleep)
@@ -27,7 +28,8 @@ sleeps.get('/:id', async (req, res) => {
 })
 
 // CREATE A SLEEP LOG
-sleeps.post('/', async (req, res) => {
+router.put('/', async (req, res) => {
+    console.log(req.body)
     try {
         const newSleep = await Sleep.create(req.body)
         res.status(200).json({
@@ -35,9 +37,12 @@ sleeps.post('/', async (req, res) => {
             data: newSleep
         })
     } catch(err) {
+        console.log(err)
         res.status(500).json(err)
     }
 })
 
 
-module.exports = sleeps;
+
+
+module.exports = router;
