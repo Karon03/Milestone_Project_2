@@ -11,24 +11,24 @@ Sleep.init({
         primaryKey: true,
         autoIncrement: true
     },
-    days: {
-        type: DataTypes.INTEGER,
+    day: {
+        type: DataTypes.STRING,
         allowNull: false
     },
     start_sleep: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DATE,
         allowNull: false
     },
     stop_sleep: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DATE,
         allowNull: false
     },
     start_interruption: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DATE,
         allowNull: false
     },
     stop_interruption: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.DATE,
         allowNull: false
     }
 }, {
