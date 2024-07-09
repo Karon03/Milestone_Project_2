@@ -29,7 +29,6 @@ router.get('/:id', async (req, res) => {
 
 // CREATE A SLEEP LOG
 router.post('/', async (req, res) => {
-    console.log("!!!")
     console.log(req.body)
     try {
         const newSleep = await Sleep.create(req.body)
