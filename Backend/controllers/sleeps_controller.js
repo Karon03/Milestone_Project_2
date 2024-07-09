@@ -42,6 +42,37 @@ router.post('/', async (req, res) => {
     }
 })
 
+// UPDATE A SLEEP LOG
+router.put('/:id', async (req, res) => {
+    try {
+        const updatedSleeps = await Sleep.update(req.body, {
+            where: {
+                sleep_id: req.params.id
+            }
+        })
+        res.status(200).json({
+            message: `Successfully updated ${updatedSleeps} sleep(s)`
+        })
+    } catch(err) {
+        res.status(500).json(err)
+    }
+})
+
+// DELETE A SLEEP LOG
+router.delete('/:id', async (req, res) => {
+    try {
+        const deletedSleeps = await Sleep.destroy({
+            where: {
+                sleep_id: req.params.id
+            }
+        })
+        res.status(200).json({
+            message: `Successfully deleted ${deletedSleeps} sleep(s)`
+        })
+    } catch(err) {
+        res.status(500).json(err)
+    }
+})
 
 
 
