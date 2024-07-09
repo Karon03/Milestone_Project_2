@@ -14,10 +14,6 @@ Account.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    date_of_birth: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
     password: {
         type: DataTypes.STRING,
         allowNull: false
