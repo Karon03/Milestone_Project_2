@@ -26,6 +26,7 @@
     color: #f9f9f9;
     animation: rotate 6s infinite alternate linear;
   }
+
   
   body::after {
     content: "";
@@ -33,9 +34,23 @@
     inset: 0;
     background: rgb(0 0 0 / 35%);
   }
+
+  .navbar {
+    color: rgb(255, 255, 255); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    width: 95%;
+    align-items: center;
+    margin-top: -925px;
+    text-decoration: none;
+}
+
+.navbar > a {
+  color: #f9f9f9;
+}
   
   .login-card {
-    position: relative;
+    position:absolute;
     z-index: 3;
     width: 100%;
     margin: 0 20px;
