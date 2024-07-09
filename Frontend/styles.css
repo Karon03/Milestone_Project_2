@@ -1,6 +1,8 @@
 body{
-    background-color: #222D5A;
-    font-family: tahoma; 
+    background-image: url("nightsky1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: arial; 
 }
 
 #navbar{
@@ -9,15 +11,36 @@ body{
     width: 90%;
     align-items: center;
     margin: auto;
-    
+
 }
 
 a{
     margin: 0.5em;
+    font-size: 1.5em;
 }
 
-a:link{
+#title{
     color: white;
+    text-align: center;
+    width: 85%;
+    align-items: center;
+    margin: auto;
+
+}
+h1{
+    font-size: 6em;
+    color: #F0E68C;
+
+}
+h3{
+    font-size: 2.5em;
+    margin: 0; 
+}
+a:link{
+    color: #F0E68C;
+}
+a:visited{
+    color: #F0E68C;
 }
 #about{
     color: white; 
@@ -27,5 +50,13 @@ a:link{
     margin: auto;
 }
 h2{
-    font-size: 4em;
+    font-size: 3em;
+    margin-top: 4em;
+    color: #F0E68C;
+}
+p{
+    font-size: 1.1em;
+    width: 55%;
+    display: inline-block;
+    margin-top: 4em;
 }
