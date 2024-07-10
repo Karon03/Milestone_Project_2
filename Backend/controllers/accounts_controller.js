@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const foundAccount = await Account.findOne({
-            where: { sleep_id: req.params.id }
+            where: { account_id: req.params.id }
         })
         res.status(200).json(foundAccount)
     } catch (error) {
@@ -45,7 +45,7 @@ router.put('/:id', async (req, res) => {
     try {
         const updatedAccounts = await Account.update(req.body, {
             where: {
-                sleep_id: req.params.id
+                account_id: req.params.id
             }
         })
         res.status(200).json({

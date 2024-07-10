@@ -7,7 +7,7 @@ Given a list of project choices, the one that stuck out to the group members of 
 
 
 ## Features for the Future.
-There are quite a few features we'd like to touch up on or add in the future for this project, but due to time constraints, some of them had to be cut out of the current product and potentially added at a later date. One of the first ones that comes to mind was having it show the estimated amount of time that you were in REM sleep, Another feature would be showing like a sleep score, kind of like how good of quality the sleep you had gotten that night was using the data inserted.
+There are quite a few features we'd like to touch up on or add in the future for this project, but due to time constraints, some of them had to be cut out of the current product and potentially added at a later date. One of the first ones that comes to mind is having the textfields function on the login/signup so that after using it redirects you to different pages and ability to insert data in the account page as well, Another feature would be showing like a sleep score, kind of like how good of quality the sleep you had gotten that night was using the data inserted.
 
 ## How to run the project.
 1. Click on the "Code" button and copy the URL provided.
