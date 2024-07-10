@@ -13,10 +13,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      date_of_birth: {
-        type: Sequelize.DATE,
-        allowNull: false
-      },
       password: {
         type: Sequelize.STRING,
         allowNull: false
