@@ -2,6 +2,7 @@ body{
     background-image: url("nightsky1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: arial; 
 }
 
 #navbar{

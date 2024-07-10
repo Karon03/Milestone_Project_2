@@ -32,9 +32,28 @@ table{
     width: 80%;
     border: 0.2em solid;
     text-align: center;
+    margin-top: 14em;
+}
+
+p{
+    color: #F0E68C;
+    margin: auto;
+    width: 80%;
+    text-align: left;
+    margin-top: 1em;
 }
 
 h2{
     color: #F0E68C;
+    margin: auto;
+    width: 80%;
+
+}
+
+h1{
+    color: #F0E68C;
+    margin: auto;
+    width: 80%;
+    font-size: 4em;
 }
 
