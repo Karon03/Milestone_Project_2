@@ -1,5 +1,8 @@
 body{
-    background-color: #222D5A;
+    background-image: url("nightsky1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
     font-family: arial; 
 }
 
@@ -14,5 +17,4 @@ table{
 h2{
     color: #F0E68C;
 }
-
 
