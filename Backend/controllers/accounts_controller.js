@@ -61,7 +61,7 @@ router.delete('/:id', async (req, res) => {
     try {
         const deletedAccounts = await Account.destroy({
             where: {
-                sleep_id: req.params.id
+                account_id: req.params.id
             }
         })
         res.status(200).json({
