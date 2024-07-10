@@ -2,8 +2,28 @@ body{
     background-image: url("nightsky1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-
     font-family: arial; 
+}
+
+#navbar{
+    color: white; 
+    text-align: right;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+
+}
+
+a{
+    margin: 0.5em;
+    font-size: 1.5em;
+}
+
+a:link{
+    color: #F0E68C;
+}
+a:visited{
+    color: #F0E68C;
 }
 
 table{
